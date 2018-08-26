@@ -1,5 +1,5 @@
 body {
-	/*background-image: url(img/worldmap.jpg);*/
+	background-image: url(../img/worldmap.jpg);
 
 	max-width: 100% 100%;
 	margin: 0 auto;
@@ -47,14 +47,30 @@ section {
 #buy {
 	display: inline-block;
 	float: left;
-	width: 40%;
-	padding: 5%;
-	padding-top: 15%;
+	width: 35%;
+	padding: 2%;
+	margin: 5%;
+	margin-top: 8%;
 	font-family: 'Crimson Text', serif;
+	background-color: #DBA15D;
+	border: 1px 1px #000;
+	border-style: double solid solid double;
+}
+
+ul {
+	list-style: circle;
 }
 
 h1 {
 	font-size: 200%;
+	text-align: center;
+	color: red;
+	text-shadow: 2px 2px 8px blur #000;
+	text-decoration: underline;
+}
+
+h2 {
+	text-align: center;
 }
 
 #letter {
@@ -87,5 +103,16 @@ img {
 footer {
 	clear: both;
 	text-align: center;
-	background: #545457;
+	background: #000;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #DBA15D;
+	font-weight: bold;
 }
