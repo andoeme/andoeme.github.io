@@ -3,27 +3,57 @@
 <head>
 	<title>My Portfolio</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-	<section>
-	<h1>Welcome to my portfolio!</h1>
-	<p> I'm Melanie Günther, a Junior Web Developer who's interested in App Development as well.</p>
-	<p>I'm currently working on some projects and improving my knowledge of Java ans Javascript. Additionally I like Machine Learning and want to develop myself and my knowledge in the future.</p>
-	<p>Here on GitHub I want to get to know other souls who are interested in Development and Design and of course improving and working on my knwoledge and skills. I will share different code snippets I worked on and will work on in the future.</p>
-	</section>
-	<section>
-		<h1>More about me:</h1>
-		<p>I'm 28 years old studying Dutch Sciences and programming, making music and learning languages in my free time. I also like books and traveling. I'm located at Berlin, Germany, and happy to get in contact with alike fellows :).</p>
-	</section>
-	<section>
-		<h1>My Portfolio</h1>
-		<ul>
-			<li><a href="rebel_wars.html">Landing Page Rebel Wars</a></li>
-			<li><a href="responsive.html">Responsive Design</a></li>
-			<li>Something else to show</li>
+
+<div id="wrapper">
+	<div id="portfolio" class="clearfix">	
+
+		<h1><img src="img/foto.jpg" alt="Melanie Günther Photo" /><span id="white">M</span>elanie Günther</h1>
+
+		<h2>Hi there, I'm Melanie Günther, a Junior Web Developer and finishing student of Dutch Science in Berlin, Germany.<br><br>
+			You can contact me by using <a href="mailto:gunterme@zedat.fu-berlin.de"><i class="far fa-envelope"></i> e-mail</a>.</h2>		
+
+		<ul class="portfolio">
+			<li>
+				<a href="rebel_wars.html" title="Landing Page"><img src="img/rebel_wars.jpg" alt="Landing Page" /></a>	
+				<div>
+					<h3>Landing Page</h3>
+					<p>HTML5, CSS3: A landing page of the novel <em>Rebel Wars</em></p>
+				</div>				
+			</li>
+			<li>
+				<a href="responsive.html" title="Responsive Design"><img src="img/responsive.jpg" alt="Responsive Design" /></a>	
+				<div>
+					<h3>Responsive Design</h3>
+					<p>HTML5, CSS3, JavaScript: An example of Responsive Design with a video and table</p>
+				</div>			
+			</li>	
+			<li>
+				<a href="fill_form.html" title="Fill a form with JavaScript"><img src="img/fill_form.jpg" alt="Fill a from with JavaScript" /></a>	
+				<div>
+					<h3>Form with JavaScript</h3>
+					<p>HTML5, CSS3, JavaScript: Fill a from automatically with JavaScript.</p>
+				</div>			
+			</li>
+			<li>
+				<a href="img/vba_tp.jpg"><img src="img/vba_tp_small.jpg" alt="VBA to improve workflow" /></a>	
+				<div>
+					<h3>VBA to improve workflow</h3>
+					<p>Excel, VB: Form to read data from an Excel table and auto fill the data into an e-mail to be send.</p>
+				</div>			
+			</li>			
 		</ul>
-	</section>
+		<h2></h2>
+	</div>
+</div>	
+<footer>
+	<p>&copy; 2018 Melanie Günther</p>
+</footer>
 </body>
 </html>

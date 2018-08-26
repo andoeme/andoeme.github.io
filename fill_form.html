@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Fill in with JavaScript</title>
+	<style type="text/css">input{
+			border:1px solid black;
+		}
+		input:focus{
+			background-color: #E6E6E6;
+		}
+		fieldset{
+			margin-bottom: 4%;
+		}</style>
+</head>
+<body>
+	<h1>JavaScript Form</h1>
+	<p>Auto fill-in of a Form with JavaScript.</p>
+
+<form>
+		<fieldset>
+			<legend>Shipping Information</legend>
+			<label for ="shippingName">Name:</label>
+			<input type = "text" name = "shipName" id = "shippingName" required><br/>
+			<label for = "shippingZip">Zip code:</label>
+			<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>
+		<label for = "same">Is the Billing Information the Same?</label>
+				
+		<fieldset> 
+			<legend>Billing Information</legend>
+			<label for ="billingName">Name:</label>
+			<input type = "text" name = "billName" id = "billingName" required><br/>
+			<label for = "billingZip">Zip code:</label>
+			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+			<input type = "submit" value = "Verify"/>
+		</form>
+
+		
+	<script type="text/javascript">
+		/*Add the JavaScript here for the function billingFunction().  
+It is responsible for setting and clearing the fields in Billing Information */
+function billingFunction() {
+  if (same.checked) {
+    /* Check if shippingName and shippingZip aren't empty */
+    if (shippingName.value == '' || shippingZip.value == '') {
+      /* Notify the user and uncheck the box */
+      alert('Please fill in the fields.');
+      same.checked = false;
+    }
+    /* If they aren't empty fill the billing information */
+    else {
+      billingName.value = shippingName.value;
+      billingZip.value = shippingZip.value;
+    }
+  }
+  else {
+    /* If not checked keep billing information empty */
+    billingName.value = '';
+    billingZip.value = '';
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+

@@ -116,3 +116,23 @@ a:hover {
 	color: #DBA15D;
 	font-weight: bold;
 }
+
+@media only screen and (max-width: 700px) {
+	#buy {
+		width: 80%;
+	}
+
+	#letter {
+		width: 80%;
+	}
+
+	img {
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+		img {
+			visibility: hidden;
+		}
+	}
