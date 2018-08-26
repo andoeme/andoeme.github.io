@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Examples by Colleen van Leen</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script>
+		function date(){
+			document.getElementById('javascript_onload').innerHTML= "Heute ist " + Date() + ".";
+		}
+		function username(){
+			var name = prompt("Hallo! Wie heißen Sie?");
+			x = document.getElementById('javascript_onclick');
+			x.style.color = "#ee00aa";
+			x.innerHTML = "Herzlich Willkommen auf dieser Webseite, " + name + ".";
+			x.className = "center";
+		}
+	</script>
+</head>
+<body onload="date()">
+	<header>
+			<a href="responsive.html"><h1>Web Design & Web Development</h1></a>
+			<nav>
+				<a href="responsive.html">Responsive Web Design</a>
+				<a href="javascript.html">JavaScript</a>
+			</nav>
+		</header>
+
+		<!-- Inhalt -->
+		<main>
+			<p id="javascript_onload"></p>
+			<button onclick="username()" type="button">Klick mich :)</button>
+			<p id="javascript_onclick"></p>
+		</main>
+
+		<footer>
+			<script>
+				document.write("Diese Seite wurde am " + Date() + " aufgerufen.");
+			</script>
+			<p>&copy; 2018 by Melanie Günther</p>
+		</footer>
+</body>
+</html>
