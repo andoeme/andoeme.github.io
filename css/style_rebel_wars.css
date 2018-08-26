@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
 	/*background-image: url(img/worldmap.jpg);*/
 
@@ -89,6 +90,98 @@ footer {
 	clear: both;
 	text-align: center;
 	background: #545457;
+=======
+body {
+	/*background-image: url(img/worldmap.jpg);*/
+
+	max-width: 100% 100%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #E8AB0C;
+	opacity: rgba(76, 175, 80, 0.5);
+	margin: 0 auto;
+}
+
+#logo {
+	display: inline;
+	font-family: 'Quintessential', cursive;
+	text-decoration: none;
+	font-size: 200%;
+}
+
+nav {
+	display: inline;
+	float: right;
+	padding-right: 0%;
+	text-align: right;
+}
+
+nav a {
+	font-family: 'Quintessential', cursive;
+	text-decoration: none;
+	font-size: 200%;
+	padding-left: 5%;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 900px;
+	opacity: rgba(76, 175, 80, 0.1);
+}
+
+section {
+	display: block;
+	clear: both;
+	
+}
+
+#buy {
+	display: inline-block;
+	float: left;
+	width: 40%;
+	padding: 5%;
+	padding-top: 15%;
+	font-family: 'Crimson Text', serif;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+#letter {
+	display: inline-block;
+	float: right;
+	width: 30%;
+	background-image: url(img/parchment.png);
+	background-size: 100% 100%;
+	object-fit: contain;
+	max-width: 999px;
+	margin: 0 auto;
+	padding: 10%;
+	font-family: 'Tangerine', cursive, serif;
+	font-size: 150%;
+}
+
+img {
+	position: absolute;
+	top: 25%;
+	right: 10%;
+	max-width: 20%;
+	transform: rotate(35deg);
+	object-fit: cover;
+	margin: 100px 0 0 100px;
+	border: 5px white solid;
+	filter: grayscale(100%);
+	box-shadow: 5px 10px 20px -5px;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	background: #545457;
+>>>>>>> 636f93ab6b76cff6ae10d0421b0570f0fd44e71e
 =======
 body {
 	/*background-image: url(img/worldmap.jpg);*/
