@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News Site Layout</title>
+	<style type="text/css">
+		body {
+			margin: 0 auto;
+			font-family: sans-serif;
+		}
+
+		header {
+			margin: 0 auto;
+			width: 1000px;
+			margin-top: -20px;
+			margin-bottom: -18px;
+			border: 0 solid #ccd1d1;
+			border-bottom-width: 1px;
+			padding: 0;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		#logo {
+			float: left;
+			padding: 7px 5px 0px 5px;
+		}
+
+		nav li {
+			display: inline-block;
+			border: 0 solid #ccd1d1;
+			border-left-width: 1px;
+			padding: 10px;
+		}
+
+		nav a {
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		header nav a {
+			color: #000;
+		}
+
+		.blue:hover { box-shadow: 1px 5px 2px -2px blue; }
+
+  		.red:hover { box-shadow: 1px 5px 2px -2px red; }
+
+  		.yellow:hover { box-shadow: 1px 5px 2px -2px yellow; }
+
+  		.light_blue:hover { box-shadow: 1px 5px 2px -2px #0ff; }
+
+  		.black:hover { box-shadow: 1px 5px 2px -2px black; }
+
+  		input {
+  			background-color: #ccd1d1;
+  		}
+
+  		#nav {
+  			background-color: #c0392b;
+  			margin: 0 auto;
+  			text-align: center;
+  		}
+
+  		#nav h1 {
+  			color: #fff;
+  			font-size: 300%;
+  			line-height: 0;
+  			padding-top: 30px;
+  			margin-top: 0;
+  			margin-bottom: 30px;
+  			margin-left: -790px;
+  		}
+
+  		#nav ul {
+  			background-color: #922b21;
+  			margin-left: -90px;
+  		}
+
+  		#nav li {
+  			display: inline-block;
+			padding: 10px 5px;
+			margin-bottom: 3px;
+  		}
+
+  		#nav a {
+  			color: #fff;
+  			text-decoration: none;
+			border: 0 solid white;
+			border-right-width: 1px;
+			padding-right: 14px;
+  		}
+
+  		.white:hover { box-shadow: -2px 5px 2px -2px #fff; }
+
+  		.active { box-shadow: -2px 5px 2px -2px #fff; }
+
+  		.bg_black:hover { background-color: #000; }
+
+  		#wrapper {
+  			margin: 0 auto;
+  			max-width: 1000px;
+  		}
+
+		section li {
+			display: inline-block;
+		}
+
+		#mainsection {
+			display: inline-block;
+			float: left;
+			padding: 0 20px;
+			width: 70%;
+		}
+
+		#mainsection img {
+			width: 400px;
+		}
+
+		#mainsection h1 {
+			display: inline-block;
+			font-weight: normal;
+			font-size: 125%;
+			border:0 solid red;
+			border-bottom-width: 3px;
+		}
+
+		#mainsection p {
+			color: grey;
+			font-size: .9em;
+			line-height: 1.5;
+			text-align: left;
+			margin-right: 350px;
+		}
+
+		#mainsection article h1 {
+			font-size: 250%;
+			line-height: 0;
+			border: none;
+			color: grey;
+			margin: 30px 0 0 0;
+		}
+
+		#mainsection a {
+			color: red;
+			text-decoration: none;
+		}
+
+		#mainsection a:hover {
+			color: blue;
+			text-decoration: none;
+		}
+
+		aside h1 {
+			font-weight: normal;
+		}
+
+		aside h2 {
+			color: #000;
+			font-size: 80%;
+		}
+
+		aside li {
+			padding-bottom: 5px;
+		}
+
+		aside a {
+			text-decoration: none;
+		}
+
+		.watch {
+			margin-left: 830px;
+		}
+
+		.watch a {
+			color: grey;
+		}
+
+		.date {
+			font-size: 80%;
+		}
+
+		.tag {
+			color: red;
+		}
+
+		footer {
+			clear: both;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#" id="logo"><span style="background: #000; color: #fff; font-size: 150%;">A</span> <span style="background: #000; color: #fff; font-size: 150%;">B</span> <span style="background: #000; color: #fff; font-size: 150%;">C</span></a>
+			<ul>
+				<li class="blue"><a href="#">Sign In</a></li>
+				<li class="red"><a href="#">News</a></li>
+				<li class="yellow"><a href="#"">Sport</a></li>
+				<li class="light_blue"><a href="#">Weather</a></li>
+				<li class="blue"><a href="#">Shop</a></li>
+				<li class="black"><a href="#">Earth</a></li>
+				<li class="black"><a href="#">Travel</a></li>
+				<li class="blue"><a href="#">Capital</a></li>
+				<li class="black"><a href="#">More</a></li>
+				<li>
+					<form>
+						<input type="search" name="searchbar" placeholder="Search"></li>
+					</form>
+			</ul>
+		</nav>
+	</header>
+	
+		<section id="nav">
+			<h1>NEWS</h1>
+			<ul>
+				<li class="white"><a href="#">Home</a></li>
+				<li class="white"><a href="#">Video</a></li>
+				<li class="white"><a href="#">World</a></li>
+				<li class="white"><a href="#">UK</a></li>
+				<li class="white"><a href="#">Business</a></li>
+				<li class="white active"><a href="#">Tech</a></li>
+				<li class="white"><a href="#">Science</a></li>
+				<li class="white"><a href="#">Stories</a></li>
+				<li class="white"><a href="#">Entertainment & Arts</a></li>
+				<li class="white"><a href="#">Health</a></li>
+				<li class="bg_black"><a href="#">More</a></li>
+			</ul>
+		</section>
+		<div id="wrapper">
+			<main>
+				<section id="mainsection">
+					<h1>Technology</h1>
+					<article>
+						<h1>Lorem Ipsum Dolor Sit Amet</h1>
+						<div id="teaser">
+							<a href="https://www.flickr.com/photos/awaywiththepixies/10034381065/in/photolist-TTbm7p-mCyKbV-ghGPU6-5bEzTq-wdLdc-SR9V7N-WdRGvP-di4RZF-nqXmh8-fLt2iL-pXK4yU-akmccQ-SEWM6h-5toTt8-47B9v9-9wPnAe-9hfhFK-kW7w4c-9wSjp1-nH9C3c-bVLLa1-vayd-cBvWQY-ghGVhG-qmWndW-pqWEAZ-VM6RXo-6vcAnt-nHfnEy-L2S9X-9hinY9-cxDDzQ-aqoVGw-d6DeqA-pdTwQr-vanw-imxVtb-c8deBG-nS6Ecp-8nMh7J-YkGaXr-ijTNUj-akiken-nuV3U5-8nJ9Un-7YKjDu-nH9JMe-aqmhRg-odw7Ns-pqYyKE" target="_blank"><img src="https://farm4.staticflickr.com/3833/10034381065_31f66e0c00_b.jpg" alt="Take That/Robbie Williams Wembley Stadium" align="right"></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p>1 hour ago | <a href="#">Technology</a></p>
+							<p><a href="#" style="color: #000;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#000'">Phasellus et velit eu neque rutrum placerat eget a metus</a></p>
+							<p><a href="#" style="color: #000;" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#000'">Maecenas scelerisque magna tortor, fringilla maximus elit ultricies ut</a></p>
+						</div>
+					</article>
+				</section>
+			</main>
+			<aside>
+				<br><br><br>
+				<h1>Watch/Listen</h1>
+				<ul>
+					<li><a href="#"><img src="https://www.lipsum.com/images/banners/grey_120x90.gif" alt="Lorem ipsum" align="left"><div class="watch"><h2>The supermodels that will never die</h2>
+					<p class="date">5 September 2018 | <a href="#" style="color: red;">Technology</a></p></a></div></li>
+					<li><a href="#"><img src="https://www.lipsum.com/images/banners/white_120x90.gif" alt="Lorem ipsum" align="left"><div class="watch"><h2>Acer unveils new gaming cockpit</h2>
+					<p class="date">31 August 2018 | <a href="#" style="color: red;">Technology</a></p></a></div></li>
+					<li><a href="#"><img src="https://www.lipsum.com/images/banners/black_120x90.gif" alt="Lorem ipsum" align="left"><div class="watch"><h2>Flying on a rocket-fuelled hoverboard</h2>
+					<p class="date">29 August 2018 | <a href="#" style="color: red;">Technology</a></p></a></div></li>
+				</ul>
+			</aside>
+		</div>
+	<footer>
+		
+	</footer>
+</body>
+</html>
