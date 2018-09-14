@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html>
+
+    <head>
+
+        <title>Test Your Reaction Game</title>
+
+    </head>
+
+    <body>
+
+        <h1>Test your reactions!</h1>
+
+        <p>Click the boxes and circles as quickly as you can!</p>
+
+        <strong><p id="taken_time"></p> </strong>
+
+        <div id="boardgame" style="width: 500px; height: 500px; border: 2px solid black;">
+            <div id="circle" style="height: 50px; width: 50px; border-radius: 50%; background: black; display: none;"></div>
+            <div id="square" style="height: 50px; width: 50px; background: black;"></div>
+            <div id="square"></div>
+        </div>
+
+          <script type="text/javascript">
+
+            /* What do I need?
+                1. Random appearing circles and squares
+                2. timer
+                3. onclick that checks time taken between onclick and apparance of a square or circle
+                4. add the new time to the paragraph
+                5. Do this endlessly, aka loop
+            */
+
+            function pickColour () {
+
+                return Math.floor((Math.random() * 8))
+            }
+
+            function pickX () {
+
+                return Math.floor((Math.random() * 400) + 50)
+            }
+
+            function pickY () {
+
+                return Math.floor((Math.random() * 400) + 50)
+            }
+
+            function pickShape () {
+
+                return Math.floor((Math.random() * 2))
+            }
+
+            function playGame () {
+                
+                var colours = ["red", "blue", "yellow", "purple", "green", "brown", "pink", "orange"]
+                var randomColour = colours[pickColour()];
+                var x = pickX();
+                var y = pickY();
+                var shape = pickShape();
+
+                if (shape == 0) {
+                    
+                    document.getElementById("square").style.display = "none"; 
+                    var circle = document.getElementById("circle");  
+                    circle.style.display = "inline-block";
+                    circle.style.position = "relative";
+                    circle.style.left = x + "px";
+                    circle.style.top = y + "px";
+                    circle.style.backgroundColor = randomColour;
+
+                    var startTimer = new Date();
+
+                    circle.onclick = function () {
+                        
+                        var finishTimer = new Date() - startTimer;
+                        document.getElementById("taken_time").innerHTML = "Your time: " + finishTimer * 0.001 + "seconds";
+
+                        setTimeout(playGame(), 3000);
+                    }
+
+                } else {
+                    document.getElementById("circle").style.display = "none";
+                                        
+                    var square = document.getElementById("square");  
+                    square.style.display = "inline-block";
+                    square.style.position = "relative";
+                    square.style.left = x + "px";
+                    square.style.top = y + "px";
+                    square.style.backgroundColor = randomColour;
+
+                    var startTimer = new Date();
+
+                    square.onclick = function () {
+                        
+                        var finishTimer = new Date() - startTimer;
+                        document.getElementById("taken_time").innerHTML = "Your time: " + finishTimer * 0.001 + "seconds";
+
+                        setTimeout(playGame(), 3000);
+                    }
+                }
+            }
+
+            playGame();
+                             
+        </script>
+
+    </body>
+
+</html>

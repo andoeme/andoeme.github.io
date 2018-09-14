@@ -8,39 +8,72 @@
 <link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>	
 	<header>
+		<section id="logo">
+			<h1>MELANIE GÜNTHER</h1>
+			<h2>Web Developer - App Developer</h2>
+			<p><a href="mailto:gunterme@zedat.fu-berlin.de"><img src="https://www.groovypost.com/wp-content/uploads/2015/05/Outlook.png" alt="send an e-mail via this link" width="32px" height="32px"></a> 
+				<a href="https://twitter.com/andoeme?ref_src=twsrc%5Etfw" target="_blank"><img src="img/twitter.png" height="32px" width="32px" /></a></p>	
+		</section>
 		<nav>
-			<a href="#my_story">MY STORY</a>
-			<a href="#my_work">MY WORK</a>
+			<a href="#my_story">My Story</a>
+			<a href="#my_work">My Work</a>
 		</nav>
 	</header>
 	<main>
-		<section id="logo">
-			<img src="img/foto.jpg" id="me" alt="Melanie Günther Photo" />
-			<h1>MELANIE GÜNTHER</h1>
-			<h2>Web Developer - App Developer</h2>
-		</section>	
+			
 
 		<section id="mystory">
 			<a name="my_story"><h1>MY STORY</h1></a>			
-			<p>Hi, my name is Melanie Günther. I’d like to tell you my story how I went from my first steps in the World Wide Web to developing websites (and apps). When I was a child I liked spending time on computer games and websites. Whilst at school my interest in media and IT increased and I choose IT as elective subject and Fine Arts and Mathematics as advanced courses. In my free time I edited wallpapers and photographs using Photoshop and dreamt of becoming a game developer.  In summer 2009 after my a levels I took my chance to develop my very first website teaching myself HTML and CSS with SelfHTML and started my training as IT Specialist at the end of summer. How life goes I did a lot of things between now and then. Along the way I collected many experiences in different fields, but I still was curious about the functional principles of websites, apps and games.</p>
-			<p>On this webpage you can see selected works of my personal evolution of being a programmer. I am still learning more and more every day and am enthusiastic about new projects, ideas and challenges.</p>
-			<p>You can contact me by using <a href="mailto:gunterme@zedat.fu-berlin.de"><i class="far fa-envelope"></i> e-mail</a> or <a href="https://twitter.com/andoeme?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @AndoeMe</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>.</p>		
+			<div class="column">Hi, my name is Melanie Günther. I’d like to tell you my story how I went from my first steps in the World Wide Web to developing websites (and apps). When I was a child I liked spending time on computer games and websites. Whilst at school my interest in media and IT increased and I choose IT as elective subject and Fine Arts and Mathematics as advanced courses. In my free time I edited wallpapers and photographs using Photoshop and dreamt of becoming a game developer.</div>
+			<div class="column">In summer 2009 after my a levels I took my chance to develop my very first website teaching myself HTML and CSS with SelfHTML and started my training as IT Specialist at the end of summer. How life goes I did a lot of things between now and then. Along the way I collected many experiences in different fields, but I still was curious about the functional principles of websites, apps and games.</p></div>
+			<p class="clearfloat">On this webpage you can see selected works of my personal evolution of being a programmer. I am still learning more and more every day and am enthusiastic about new projects, ideas and challenges.</p>		
 		</section>
 
 		<section id="mywork">
 			<a name="my_work"><h1>MY WORK</h1></a>
-			<a href="news_site.html" title="News Site Layout"><img src="img/news_site.jpg" alt="News Site Layout" /></a>
-			<a href="rebel_wars.html" title="Landing Page"><img src="img/rebel_wars.jpg" alt="Landing Page" /></a>
-			<a href="responsive.html" title="Responsive Design"><img src="img/responsive.jpg" alt="Responsive Design" /></a>	
-			<a href="fill_form.html" title="Fill a form with JavaScript"><img src="img/fill_form.jpg" alt="Fill a from with JavaScript" /></a>	
-			<a href="img/vba_tp.jpg"><img src="img/vba_tp_small.jpg" alt="VBA to improve workflow" /></a>	
+
+			<ul>
+				<a href="#"><li id="recentwork">RECENT</li></a>
+				<a href="#"><li id="htmlcsswork">HTML & CSS</li></a>
+				<a href="#"><li id="responsivedesignwork">RESPONSIVE DESIGN</li>
+				<a href="#"><li id="javascriptwork">JAVASCRIPT</li>
+			</ul>
+			
+			<div style="margin: 0 auto;">
+			<a href="news_site.html" title="News Site Layout"><img src="img/news_site.jpg" alt="News Site Layout" align="left" /></a>
+			<a href="rebel_wars.html" title="Landing Page"><img src="img/rebel_wars.jpg" alt="Landing Page" /></a><br>
+			<a href="responsive.html" title="Responsive Design"><img src="img/responsive.jpg" alt="Responsive Design" align="left" /></a>	
+			<a href="fill_form.html" title="Fill a form with JavaScript"><img src="img/fill_form.jpg" alt="Fill a from with JavaScript" /></a><br>
+			<a href="img/vba_tp.jpg"><img src="img/vba_tp_small.jpg" alt="VBA to improve workflow" /></a></div>
 		</section>	
 	</main>
 <footer>
 	<p>&copy; 2018 Melanie Günther</p>
 </footer>
+
+<script type="text/javascript">
+	
+	$("#logo").css("display", "none");
+	$("nav").css("display", "none");
+
+	$("#logo").fadeIn(3000, function() {
+
+		$("#logo").css({
+			marginTop: "0",
+			marginBottom: "0"
+		});
+		$("nav").fadeIn();
+	});
+
+
+
+
+</script>
+
+
 </body>
 </html>

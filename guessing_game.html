@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+
+    <head>
+
+        <title>Guessing Game</title>
+
+    </head>
+
+    <body>
+        
+        <h1>How many fingers am I holding up?</h1>
+
+        <input id="userguess" type="text"> <button id="checkguess">Guess!</button>
+        <p id="result"></p>
+
+        <script type="text/javascript">
+            
+            document.getElementById("checkguess").onclick = function guess () {
+
+                var userguess = document.getElementById("userguess").value;
+
+                // Checks if the number chosen is between 0 and 5
+                if (userguess <= 5 && userguess >= 0) {
+
+                    // Create random number between 0 and 5
+                    var fingers = Math.floor((Math.random() * 5) + 1);
+
+                    // Right or wrong guess?
+                    if ( userguess == fingers) {
+
+                        document.getElementById("result").innerHTML = "You got it right! I was holding up " + fingers + " finger(s).";
+
+                    } else {
+
+                        document.getElementById("result").innerHTML = "You got it wrong! I was holding up " + fingers + " finger(s).";
+                    }
+
+                } else {
+
+                    alert("Pick a number between 0 and 5!");
+
+                }
+                
+            }
+
+        </script>
+
+    </body>
+
+</html>

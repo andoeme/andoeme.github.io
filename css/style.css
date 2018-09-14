@@ -6,13 +6,12 @@ body {
 }
 
 header {
-	background: rgb(22,16,26);
-	height: 8%;
+	
 	width: 100%;
 }
 
 nav {
-	color: #fff;
+	color: rgb(172,127,91);
 	text-decoration: none;
 	list-style: none;
 	margin: 0;
@@ -22,29 +21,59 @@ nav {
 }
 
 nav a {
-	color: #fff;
+	color: rgb(172,127,91);
 	display: inline-block;
     padding: 0 3% 0 3%;
     text-decoration: none;
 }
 
 nav a:hover {
-	color: rgb(172,127,91);
+	color: rgb(19,35,67);
 }
 
 section:nth-child(odd) {
-	background-color: rgb(19,35,67);
+	/*background-color: rgb(19,35,67);*/
 	padding-bottom: 5%;
 }
 
 section:nth-child(odd) h1 {
-	color: rgb(255,255,255);
+	/*color: rgb(255,255,255);*/
 	font-size: 200%;
 	padding-top: 5%;
 }
 
+#logo {
+
+	width: 50%;
+	margin-top: 20%;
+	margin-left: 40%;
+	margin-bottom: 20%;
+	padding: 0;
+	background: url("../img/foto.jpg") no-repeat;
+}
+
 #logo h1 {
+	color: rgb(19,35,67);
 	font-size: 300%;
+}
+
+#logo h1, h2 {
+	position: relative;
+	left: -70%;
+}
+
+#logo p {
+	position: relative;
+	left: -40%;
+}
+
+#logo a {
+	text-decoration: none;
+	color: rgb(172,127,91);
+}
+
+#logo a:hover {
+	color: rgb(19,35,67);
 }
 
 section:nth-child(even) {
@@ -57,19 +86,11 @@ section:nth-child(even) h1 {
 	padding-top: 5%;
 }
 
-#me {
-	display: block;
-	width: 20%;
-	height: 20%;
-	margin: 0 auto;
-	border-radius: 50%;
-}
-
 h1 {
 	text-align: center;
 	font: bold 400% "Josefin Sans", sans-serif;
 	line-height: 0.25;
-	color: #fff;
+	color: rgb(172,127,91);
 }
 
 h2 {
@@ -82,7 +103,7 @@ h2 {
 	margin:0 auto;
 	width: 75%;	
 	line-height: 1.5;
-	font-size: 150%;
+	font-size: 125%;
 }
 
 #mystory a {
@@ -98,14 +119,35 @@ h2 {
 	width: 100%;	
 }
 
-#mywork img {
+.column {
 	display: inline-block;
-	width: 20%;
-	margin: 1.5%;
-	border: double 10px transparent;
-  	background-image: linear-gradient(white, white), radial-gradient(rgb(172,127,91), #000);
-  	background-origin: border-box;
-  	background-clip: content-box, border-box;
+	float: left;
+	width: 40%;
+	padding: 0 5% 0 5%;
+}
+
+.clearfloat {
+	clear: both;
+	text-align: center;
+	padding: 5% 10% 0 10%;
+}
+
+#mywork ul {
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+#mywork li {
+	display: inline-block;
+	padding: 20px;
+	color: #fff;
+	padding: - 5px;
+}
+
+#mywork img {
+	width: 30%;
+	padding: 0;
 }
 
 #mywork img:hover {
