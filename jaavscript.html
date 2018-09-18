@@ -8,40 +8,26 @@
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <style type="text/css">
-        	
-        	#circle {
-
-        		border-radius: 50%;
-        		width: 100px;
-        		height: 100px;
-        		background-color: green;
-
-        	}
-
-        </style>
-
     </head>
 
     <body>
 
     	
-       	<div id="circle"></div>
+       	<p></p>
         	
         <script type="text/javascript">
         		
-        	$("#circle").click(function() {
+        	
+            $.ajax("index.html").done(function(data) {
 
-        		$(this).animate({
-        			width: "200px",
-        			height: "200px",
-        			marginLeft: "50px",
-        			marginTop: "50px"
-        		}, 2000, function() {
-        			$(this).css("background-color", "red");
-        		});
+                $("p").html(data);
 
-        	})
+            }).fail(function() {
+
+                $("p").html("Could not get data");
+
+            });
+        	
 
         </script>
 
