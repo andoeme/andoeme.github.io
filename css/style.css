@@ -10,27 +10,6 @@ header {
 	width: 100%;
 }
 
-nav {
-	color: rgb(172,127,91);
-	text-decoration: none;
-	list-style: none;
-	margin: 0;
-	padding: 2% 0;
-	font: bold 100% "Josefin Sans", sans-serif;
-	text-align: center;
-}
-
-nav a {
-	color: rgb(172,127,91);
-	display: inline-block;
-    padding: 0 3% 0 3%;
-    text-decoration: none;
-}
-
-nav a:hover {
-	color: rgb(19,35,67);
-}
-
 section:nth-child(odd) {
 	/*background-color: rgb(19,35,67);*/
 	padding-bottom: 5%;
@@ -42,12 +21,16 @@ section:nth-child(odd) h1 {
 	padding-top: 5%;
 }
 
+#break {
+	display: inline-block;
+}
+
 #logo {
 
 	width: 50%;
 	margin-top: 20%;
 	margin-left: 40%;
-	margin-bottom: 20%;
+	margin-bottom: 90%;
 	padding: 0;
 	background: url("../img/foto.jpg") no-repeat;
 }
@@ -76,6 +59,14 @@ section:nth-child(odd) h1 {
 	color: rgb(19,35,67);
 }
 
+#logo img:hover {
+
+    -ms-transform: scale(1.5, 1.5); /* IE 9 */
+    -webkit-transform: scale(1.5, 1.5); /* Safari */
+    transform: scale(1.5, 1.5);
+
+}
+
 section:nth-child(even) {
 	background-color: rgb(255,255,255);
 }
@@ -100,10 +91,14 @@ h2 {
 }
 
 #mystory {
-	margin:0 auto;
+	margin: 0 auto;
 	width: 75%;	
 	line-height: 1.5;
-	font-size: 125%;
+	font-size: 100%;
+}
+
+#mystory h1 {
+	padding-bottom: 5%;
 }
 
 #mystory a {
@@ -115,21 +110,27 @@ h2 {
 	color: rgb(19,35,67);
 }
 
-#mywork {	
-	width: 100%;	
-}
-
 .column {
 	display: inline-block;
 	float: left;
-	width: 40%;
+	width: 50%;
 	padding: 0 5% 0 5%;
+	text-align: justify;
 }
 
 .clearfloat {
 	clear: both;
 	text-align: center;
 	padding: 5% 10% 0 10%;
+}
+
+#mywork {	
+	width: 100%;	
+}
+
+#mywork h1 {
+	color: rgb(172,127,91);
+	padding-bottom: 5%;
 }
 
 #mywork ul {
@@ -154,6 +155,109 @@ h2 {
   	background-image: linear-gradient(white, white), radial-gradient(#000, rgb(172,127,91));
 }
 
+
+/* Slideshow */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(113,113,113,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
 footer {
 	clear: both;
 	text-align: center;
@@ -164,12 +268,87 @@ footer {
 	height: 8%;
 }
 
-@media only screen and (max-width: 800px) {
-	
+@media only screen and (max-width: 1000px) {
+
+	#logo {
+		margin-top: 40%;
+		margin-bottom: 90%;
+	}
+
+	#logo h1 {
+		text-align: center;
+		font: bold 200% "Josefin Sans", sans-serif;
+		line-height: 0.25;
+	}
+
+	#mystory {
+		width: 100%;
+	}
+
 }
 
 
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 680px) {
+
+	#logo {
+		width: 100%;
+		margin-top: 90%;
+		margin-left: 0;
+		margin-bottom: 90%;
+		padding: 0;
+		background: url("");
+	}
+
+	#logo h1, h2 {
+		left: 0;
+	}
+
+	#logo p {
+		left: 0;
+		text-align: center;
+	}
+
+	#logo h1 {
+		font: bold 100%;
+	}
+
+	#logo h2 {
+		font: 50%;
+	}
+
+	.column {
+		float: none;
+		width: 100%;
+		padding-bottom: 5%;
+	}
+
+	#mystory {
+		width: 100%;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 340px) {
+
+	#logo {
+		width: 100%;
+		margin-top: 90%;
+		margin-left: 0;
+		margin-bottom: 90%;
+		padding: 0;
+		background: url("");
+	}
 	
+	#break {
+		display: block;
+		padding-top: 12.5%;
+	}
+
+	#mystory {
+		width: 100%;
+	}
 }

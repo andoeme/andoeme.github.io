@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
 	<title>Portfolio of Melanie Günther</title>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>	
 	<header>
 		<section id="logo">
-			<h1>MELANIE GÜNTHER</h1>
+			<h1>MELANIE <div id="break">GÜNTHER</div></h1>
 			<h2>Web Developer - App Developer</h2>
-			<p><a href="mailto:gunterme@zedat.fu-berlin.de"><img src="https://www.groovypost.com/wp-content/uploads/2015/05/Outlook.png" alt="send an e-mail via this link" width="32px" height="32px"></a> 
-				<a href="https://twitter.com/andoeme?ref_src=twsrc%5Etfw" target="_blank"><img src="img/twitter.png" height="32px" width="32px" /></a></p>	
+			<p><a href="mailto:gunterme@zedat.fu-berlin.de" ><img src="https://www.groovypost.com/wp-content/uploads/2015/05/Outlook.png" alt="send an e-mail via this link" width="32px" height="32px"></a> 
+			<a href="https://twitter.com/andoeme?ref_src=twsrc%5Etfw" target="_blank" class="contact"><img src="img/twitter.png" height="32px" width="32px" /></a></p>	
 		</section>
-		<nav>
-			<a href="#my_story">My Story</a>
-			<a href="#my_work">My Work</a>
-		</nav>
 	</header>
 	<main>
 			
@@ -36,19 +36,42 @@
 		<section id="mywork">
 			<a name="my_work"><h1>MY WORK</h1></a>
 
-			<ul>
-				<a href="#"><li id="recentwork">RECENT</li></a>
-				<a href="#"><li id="htmlcsswork">HTML & CSS</li></a>
-				<a href="#"><li id="responsivedesignwork">RESPONSIVE DESIGN</li>
-				<a href="#"><li id="javascriptwork">JAVASCRIPT</li>
-			</ul>
-			
-			<div style="margin: 0 auto;">
-			<a href="news_site.html" title="News Site Layout"><img src="img/news_site.jpg" alt="News Site Layout" align="left" /></a>
-			<a href="rebel_wars.html" title="Landing Page"><img src="img/rebel_wars.jpg" alt="Landing Page" /></a><br>
-			<a href="responsive.html" title="Responsive Design"><img src="img/responsive.jpg" alt="Responsive Design" align="left" /></a>	
-			<a href="fill_form.html" title="Fill a form with JavaScript"><img src="img/fill_form.jpg" alt="Fill a from with JavaScript" /></a><br>
-			<a href="img/vba_tp.jpg"><img src="img/vba_tp_small.jpg" alt="VBA to improve workflow" /></a></div>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <a href="news_site.html" title="News Site Layout"><img src="img/news_site.jpg" style="width:100%"></a>
+				  <div class="text">News Site Layout</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <a href="fill_form.html" title="Fill a form with JavaScript"><img src="img/fill_form.jpg" style="width:100%"></a>
+				  <div class="text">Fill a form with JavaScript automatically</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <a href="img/vba_tp.jpg"><img src="img/vba_small.jpg" style="width:100%"></a>
+				  <div class="text">VBA to improve the workflow in an Excel Sheet</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+
+
+
+
 		</section>	
 	</main>
 <footer>
@@ -62,13 +85,45 @@
 
 	$("#logo").fadeIn(3000, function() {
 
-		$("#logo").css({
+		setTimeout(function() {
+
+		$("#logo").animate({
 			marginTop: "0",
 			marginBottom: "0"
-		});
+		}, 3000)}, 1000);
+	
 		$("nav").fadeIn();
 	});
 
+
+	// Slideshow My Work
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
 
 
 
