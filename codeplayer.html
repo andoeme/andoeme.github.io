@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Codeplayer like jsbin.com and CodePen</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style type="text/css">
+
+		body {
+
+			margin: 0 auto;
+
+		}
+
+		header {
+
+			background: silver;
+			height: 50px;
+			border: 0 solid grey;
+			border-bottom: 1px;
+
+		}
+
+		header h1 {
+			font-size: 150%;
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+
+		nav a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		ul {
+
+			position: relative;
+			top: -43px;
+			left: 30%;
+			list-style: none;
+
+		}
+
+		a {
+
+			margin: 0 auto;
+			float: left;
+			background: aqua;
+			border: 1px solid grey;
+			border-right: none;
+			padding: .5%;
+
+		}
+
+		a:first-child {
+
+			border-radius: 5px 0 0 5px;
+
+		}
+
+		a:last-child {
+
+			border-right: 1px solid grey;
+			border-radius: 0 5px 5px 0;
+
+		}
+
+		a:hover {
+			background: white;
+		}
+
+		main {
+
+			clear: both;
+
+		}
+		
+		
+		div { 
+
+			display: inline-block;
+		  	background-position: top left; 
+		  	width: 22%; 
+		  	height: 85vh; 
+		  	padding: 1%;
+		  	margin-top: -30px;
+		  	border-right: 1px solid grey;
+
+		}
+
+		div:last-child {
+
+			border: none;
+
+		}
+
+		div h1 { 
+
+			text-align: center; 
+			font-size: 100%;
+			color: aqua;
+			margin: 0; 
+
+		} 
+
+		div input {
+			width: 100%;
+			height: inherit;
+			border: none;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Live Code Writer</h1>
+
+		<nav>
+
+			<ul>
+				<a href="#" id="htmlButton"><li>HTML</li></a>
+				<a href="#" id="cssButton"><li>CSS</li></a>
+				<a href="#" id="javascriptButton"><li>JavaScript</li></a>
+				<a href="#" id="outputButton"><li>Output</li></a>
+			</ul>
+			
+		</nav>
+
+	</header>
+
+	<main>
+		
+		<div id="htmlPanel">
+			
+			<h1>HTML</h1>
+
+			<input id="htmlInput" type="text" placeholder="Input HTML code...">
+
+		</div>
+
+		<div id="cssPanel">
+			
+			<h1>CSS</h1>
+
+			<input id="cssInput" type="text" placeholder="Input CSS code...">
+
+		</div>
+
+		<div id="javascriptPanel">
+			
+			<h1>JavaScript</h1>
+
+			<input id="javascriptInput" type="text" placeholder="Input JavaScript code...">
+
+
+		</div>
+
+		<div id="outputPanel">
+			
+			<h1>Output</h1>
+
+			<p id="output"></p>
+
+		</div>
+
+	</main>
+
+
+	<script type="text/javascript">
+
+		// Count how many panels are currently visible
+
+		function panelCountNone () {
+
+			var panelCount = 0;
+
+			if ( $("#htmlPanel").css("display") == "none" ) {
+
+				panelCount++;
+
+			}
+
+			if ( $("#cssPanel").css("display") == "none" ) {
+
+				panelCount++;
+
+			}
+
+			if ( $("#javascriptPanel").css("display") == "none" ) {
+
+				panelCount++;
+
+			}
+
+			if ( $("#outputPanel").css("display") == "none" ) {
+
+				panelCount++;
+
+			}
+
+			return panelCount;
+
+		}
+
+
+		// Change width of panels according to the amount of visible panels
+
+		function changePanelWidth (panelCount) {
+
+			switch (panelCount) {
+				case 0: $("div").css("width", "22%");
+					break;
+
+				case 1: $("div").css("width", "30%");
+					break;
+
+				case 2: $("div").css("width", "45%");
+					break;
+
+				case 3: $("div").css("width", "95%");
+					break;
+			}
+
+		}
+
+		// Show and hide the HTML Panel on click
+
+		$("#htmlButton").click( function() {
+
+			if ( $("#htmlPanel").css("display") == "none" ) {
+
+				$("#htmlPanel").css("display", "inline-block");
+				
+
+			} else {
+				
+				$("#htmlPanel").css("display", "none");
+			}
+
+			var panelCount = panelCountNone();
+
+			changePanelWidth(panelCount);
+
+		})
+
+		// Show and hide the CSS Panel on click
+
+		$("#cssButton").click( function() {
+
+			if ( $("#cssPanel").css("display") == "none" ) {
+
+				$("#cssPanel").css("display", "inline-block");
+				
+
+			} else {
+				
+				$("#cssPanel").css("display", "none");
+			}
+
+			var panelCount = panelCountNone();
+
+			changePanelWidth(panelCount);
+
+		})
+
+		// Show and hide the JavaScript Panel on click
+
+		$("#javascriptButton").click( function() {
+
+			if ( $("#javascriptPanel").css("display") == "none" ) {
+
+				$("#javascriptPanel").css("display", "inline-block");
+				
+
+			} else {
+				
+				$("#javascriptPanel").css("display", "none");
+			}
+
+			var panelCount = panelCountNone();
+
+			changePanelWidth(panelCount);
+
+		})
+
+		// Show and hide the Output Panel on click
+
+		$("#outputButton").click( function() {
+
+			if ( $("#outputPanel").css("display") == "none" ) {
+
+				$("#outputPanel").css("display", "inline-block");
+				
+
+			} else {
+				
+				$("#outputPanel").css("display", "none");
+			}
+
+			var panelCount = panelCountNone();
+
+			changePanelWidth(panelCount);
+
+		})
+
+		// Read input and write output using AJAX
+
+		$.ajax("codeplayer_output.html")
+                .done(function(data) {
+                
+                $("#output").html(data);
+                
+                })
+                .fail(function() {
+                
+                alert("Could not get data");
+                
+                });
+
+  	</script>
+
+</body>
+
+</html>
