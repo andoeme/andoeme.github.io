@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>Codeplayer like jsbin.com and CodePen</title>
+	<title>Live Code Writer like jsbin.com and CodePen</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,7 +20,7 @@
 
 		header {
 
-			background: silver;
+			background: #2C8693;
 			height: 50px;
 			border: 0 solid grey;
 			border-bottom: 1px;
@@ -31,11 +31,12 @@
 			font-size: 150%;
 			padding-top: 10px;
 			padding-left: 10px;
+			color: #fff;		
 		}
 
 		nav a {
 			text-decoration: none;
-			color: #000;
+			color: #fff;
 		}
 
 		ul {
@@ -51,8 +52,8 @@
 
 			margin: 0 auto;
 			float: left;
-			background: aqua;
-			border: 1px solid grey;
+			background: #105187;
+			border: 1px solid #fff;
 			border-right: none;
 			padding: .5%;
 
@@ -66,13 +67,14 @@
 
 		a:last-child {
 
-			border-right: 1px solid grey;
+			border-right: 1px solid #fff;
 			border-radius: 0 5px 5px 0;
 
 		}
 
 		a:hover {
-			background: white;
+			background: #fff;
+			color: #105187;
 		}
 
 		main {
@@ -86,7 +88,7 @@
 
 			display: inline-block;
 		  	background-position: top left; 
-		  	width: 22%; 
+		  	width: 20%; 
 		  	height: 85vh; 
 		  	padding: 1%;
 		  	margin-top: -30px;
@@ -104,12 +106,22 @@
 
 			text-align: center; 
 			font-size: 100%;
-			color: aqua;
+			color: #2C8693;
 			margin: 0; 
 
 		} 
 
-		div input {
+		div textarea {
+			resize: none;
+			width: 100%;
+			height: inherit;
+			border: none;
+		}
+
+		div iframe {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
 			width: 100%;
 			height: inherit;
 			border: none;
@@ -144,7 +156,7 @@
 			
 			<h1>HTML</h1>
 
-			<input id="htmlInput" type="text" placeholder="Input HTML code...">
+			<textarea id="htmlInput" placeholder="Input HTML code..."></textarea>
 
 		</div>
 
@@ -152,7 +164,7 @@
 			
 			<h1>CSS</h1>
 
-			<input id="cssInput" type="text" placeholder="Input CSS code...">
+			<textarea id="cssInput"  placeholder="Input CSS code..."></textarea>
 
 		</div>
 
@@ -160,7 +172,7 @@
 			
 			<h1>JavaScript</h1>
 
-			<input id="javascriptInput" type="text" placeholder="Input JavaScript code...">
+			<textarea id="javascriptInput" placeholder="Input JavaScript code..."></textarea>
 
 
 		</div>
@@ -169,7 +181,7 @@
 			
 			<h1>Output</h1>
 
-			<p id="output"></p>
+			<iframe id="output"></iframe>
 
 		</div>
 
@@ -319,25 +331,9 @@
 
 			var data = "<html> <head> <style>" + $("#cssInput").val() + "</style></head><body>" + $("#htmlInput").val() + "</body></html>";
 
-			$.ajax({
-	  			type: 'POST',
-				url: "codeplayer_output.html",//url of receiver file on server
-				data: data, //your data
-				success: "Finished!", //callback when ajax request finishes
-				dataType: html //text/json...
-			});
+			$("iframe").contents().find("html").html(data);
 
-			$.ajax("codeplayer_output.html")
-                .done(function(data) {
-                
-                $("#output").html(data);
-                
-                })
-                .fail(function() {
-                
-                alert("Could not get data");
-                
-                });
+			document.getElementById("output").contentWindow.eval($("#javascriptInput").val());
 
 		})
 
