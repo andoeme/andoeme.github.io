@@ -315,7 +315,19 @@
 
 		// Read input and write output using AJAX
 
-		$.ajax("codeplayer_output.html")
+		$("div").change(function() {
+
+			var data = "<html> <head> <style>" + $("#cssInput").val() + "</style></head><body>" + $("#htmlInput").val() + "</body></html>";
+
+			$.ajax({
+	  			type: 'POST',
+				url: "codeplayer_output.html",//url of receiver file on server
+				data: data, //your data
+				success: "Finished!", //callback when ajax request finishes
+				dataType: html //text/json...
+			});
+
+			$.ajax("codeplayer_output.html")
                 .done(function(data) {
                 
                 $("#output").html(data);
@@ -326,6 +338,10 @@
                 alert("Could not get data");
                 
                 });
+
+		})
+
+		
 
   	</script>
 
