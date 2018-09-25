@@ -39,6 +39,12 @@
 			<div class="slideshow-container">
 
 				<div class="mySlides fade">
+				  <div class="numbertext">1 / 8</div>
+				  <a href="php_form.php" title="Contact Form with jQuery and PHP"><img src="img/php_form.jpg" style="width:100%"></a>
+				  <div class="text">Contact Form with jQuery and PHP</div>
+				</div>
+
+				<div class="mySlides fade">
 				  <div class="numbertext">1 / 6</div>
 				  <a href="bootstrap.html" title="App Landing Page With Bootstrap 4"><img src="img/bootstrap_rebel_wars.jpg" style="width:100%"></a>
 				  <div class="text">Live Code Writer - HTML, CSS; JavaScript</div>
@@ -94,6 +100,7 @@
 				<span class="dot" onclick="currentSlide(5)"></span> 
 				<span class="dot" onclick="currentSlide(6)"></span> 
 				<span class="dot" onclick="currentSlide(7)"></span> 
+				<span class="dot" onclick="currentSlide(7)"></span> 
 			</div>
 
 
@@ -113,14 +120,14 @@
 	$("#logo").css("display", "none");
 	$("nav").css("display", "none");
 
-	$("#logo").fadeIn(3000, function() {
+	$("#logo").fadeIn(1000, function() {
 
 		setTimeout(function() {
 
 		$("#logo").animate({
 			marginTop: "0",
 			marginBottom: "0"
-		}, 2000)}, 500);
+		}, 1000)},200);
 	
 		$("nav").fadeIn();
 	});
