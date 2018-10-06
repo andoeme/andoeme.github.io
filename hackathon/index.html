@@ -21,15 +21,18 @@
 
 <style type="text/css">
 
-    .jumbotron {
-        background: url("img/danurwendho-adyakusuma-20997-unsplash.jpg");
+    .jumbotron {        
         margin: 0 auto;
-        background-size: cover;
         text-align: center;
         border-radius: 0;
     }
 
-    .jumbotron .container {
+    .teaser {
+        background: url("img/danurwendho-adyakusuma-20997-unsplash.jpg");        
+        background-size: cover;
+    }
+
+    .teaser .container {
         background: rgba(255,255,255,1);
         padding: 5vh;
         width: 90vw;
@@ -56,6 +59,51 @@
         margin: 20vh 0 20vh 0;
     }
 
+    .card {
+        border: 0;
+        margin: 0 auto;
+        width: 23vw;
+        text-align: center;
+
+    }
+
+    .card img {
+        width: 10vw;
+        margin: 0 auto;
+    }
+
+    #firstcard{
+        padding: 0;
+        
+        margin-left: 10vw;
+    }
+
+    .center {
+        margin-left: 20%w;
+    }
+
+    .app {
+        background: #5cb85c;
+        background: url("img/danurwendho-adyakusuma-20997-unsplash_bg.jpg");
+        background-size: cover;
+        color: #000;
+        text-align: center;
+    }
+
+    .app .container {
+        background: rgba(255,255,255,1);
+        padding: 5vh;
+        width: 90vw;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .app p {
+        text-align: center;
+    }
+
+
+
     @media all AND (min-width: 400px) {
         .jumbotron .container {
             width:75vw;
@@ -69,7 +117,7 @@
     }
 
     @media all AND (min-width: 900px) {
-        .jumbotron {
+        .teaser {
             background: url(img/danurwendho-adyakusuma-20997-unsplash_lg.jpg);
             background-size: cover;
         }
@@ -159,7 +207,7 @@
 
         <section>
 
-        <div class="jumbotron">
+        <div class="jumbotron teaser">
                 <div class="container">
                     <h1 class="display-4">Do Good As You Go</h1>
                     <p class="lead">Imagine you enjoy your favorite tea. What if you could share your gratidute with local farmers on the other side of the globe? Let's tip them via <span class="text-success font-weight-bold">teaping</span>, a blockchain based service connecting consumers to local producers.</p>
@@ -170,47 +218,74 @@
                 </div>        
         </div>
 
-        <div class="container">
+        </section>
+
+        <section>
+
+        <div class="container center">
             <div class="row">
                 <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card" id="firstcard">
                 <img class="card-img-top" src="img/tea-party.png" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text"><h3>TEA ENTHUSIAST</h3></p>
+                        <h3 class="text-uppercase text-success">Tea Enthusiast</h3>
                 </div>
             </div>
             </div>
             <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img class="card-img-top" src="img/bitcoin.png" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text"><h3>MICRO PAYMENTS</h3></p>
+                    <h3 class="text-success">MICRO PAYMENTS</h3>
                 </div>
             </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img class="card-img-top" src="img/farmer.png" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text"><h3>LOCAL TEA FARMER</p>
+                        <h3 class="text-success">LOCAL TEA FARMER</h3>
                     </div>
                 </div> 
             </div>  
             </div> 
         </div>
 
+    </section>
+
+    <section>
+
         <div class="container">
-          <div class="card-body">
-            <p>Tea pickers working in tea plantations earn a dollar a day and live in slums, unhygienic conditions with no toilets, and have no healthcare and education. Its really sad that the amazing tea that we drink and pay a lot of money for does very little to help the actual person who picks our tea.</p>
-          </div>
-
+                <h2 class="display-4">OUR CONCERNS</h2>
+                <p>Amrita is a woman living close to the Darjeeling hills. 
+                    She is working in a tea plantation earning almost 2 $ a day for this back breaking job. 
+                    She lives in a slum under unhygienic conditions and has no healthcare or education. 
+                    We pay a lot of money for the amazing tea that we drink even if the actual person picking it gets almost nothing.</p>
+            
+           
+                    <h2 class="display-4">OUR SOLUTION</h2>
+                    <p><span class="font-weight-bold text-success">teaping</span> provides transactions of micro payments from tea enthusiasts to local tea farmers. 
+                        You can show your appreciation for the hard work they put into your product. 
+                        Just sign up into the platform and send an amount into a blockchain wallet and our service shares this money fairly and evenly between them. 
+                        With the help of the blockchain technology and the support of the local cooperative we can connect two sides of this line.</p>
         </div>
+                   
 
-<!--         <div class="container">
+      <!--  <div class="container">
             <h1>How Your Help Helps</h1>
             <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73302ddf5fabf9285df2da9c462efbb&auto=format&fit=crop&w=1950&q=80" width="300px">
-        </div> -->
+        </div>-->
 
+    </section>
+
+    <section>
+        <div class="jumbotron app">
+            <div class="container">
+                <h1 class="display-4">Get The App Now!</h1>
+                <p class="lead">Video of the app plus some text goes here</p>
+                <img src="img/appstore.png" width="200px" alt="Download teaping on the App Store">
+            </div>
+        </div>
     </section>
 
         
