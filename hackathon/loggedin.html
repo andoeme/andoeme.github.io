@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 
 <style type="text/css">
 
@@ -118,55 +121,7 @@
     
       <main>
 
-        <section>
-
-        <div class="jumbotron">
-                <div class="container">
-                    <h1 class="display-4">Do Good As You Go</h1>
-                    <p class="lead">A coffee to go, the theater ticket... all adds up to you being good on the go.
-                    <span class="text-success font-weight-bold">teaping</span> transfers a tiny part of your pay to help those who need it.</p>
-                    <br>
-                    <form class="form-group">
-                        <input type="submit" class="btn btn-success" href="#" role="button" value="Learn more">
-                    </form>
-                </div>        
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1495556650867-99590cea3657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjF9&s=413cc9699e1c5cf24a3bc559e25e4004&auto=format&fit=crop&w=1950&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1532372722026-28ddb1b48daf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=553bcea2e8519ab05e6df5080c3b01c4&auto=format&fit=crop&w=1950&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div> 
-            </div>  
-            </div> 
-        </div>
-
-        <div class="container">
-            <h1>How Your Help Helps</h1>
-            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73302ddf5fabf9285df2da9c462efbb&auto=format&fit=crop&w=1950&q=80" width="300px">
-        </div>
-
-    </section>
+        <h1 id="farmers"></h1>
 
         
     </main>
@@ -178,15 +133,38 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
     
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    })
+    var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://teaping.herokuapp.com/api/workers",
+  "method": "GET",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cache-Control": "no-cache",
+    'Access-Control-Allow-Origin': true
+  }
+}
+
+
+var farmers = [];
+
+$.ajax(settings).done(function (response) {
+    for (i = 0; i < response.length; i++) {
+        farmers[i] = response[i];
+    }    
+});
+
+console.log(farmers);
+
+var farmer1 = JSON.parse(farmers[0]);
+
+$("#farmers").text(farmer1[0]);
         
     </script>
   </body>
