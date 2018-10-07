@@ -30,7 +30,7 @@
 <style type="text/css">
 
     .jumbotron {
-        background: url("img/danurwendho-adyakusuma-20997-unsplash.jpg");
+        background: url("img/danurwendho-adyakusuma-20997-unsplash_bg.jpg");
         margin: 0 auto;
         background-size: cover;
         text-align: center;
@@ -64,6 +64,133 @@
         margin: 20vh 0 20vh 0;
     }
 
+    /* Bowl Code */
+
+    .bowl {
+  position: relative;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.5), inset 0 -20px 5px 0 rgba(0, 0, 0, 0.2), inset -15px 0 5px 0 rgba(0, 0, 0, 0.1), inset 15px 0 5px 0 rgba(0, 0, 0, 0.1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%, rgba(0, 0, 0, 0.65) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%, rgba(0, 0, 0, 0.65) 100%);
+  margin: 20px;
+}
+.bowl:before {
+  overflow: hidden;
+  border-radius: 50%;
+  content: "";
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.5), inset 0 -20px 5px 0 rgba(0, 0, 0, 0.2), inset -15px 0 5px 0 rgba(0, 0, 0, 0.1), inset 15px 0 5px 0 rgba(0, 0, 0, 0.1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 81%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 81%, rgba(0, 0, 0, 1) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 81%, rgba(0, 0, 0, 1) 100%);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: -0px;
+  z-index: 2;
+}
+.bowl:after {
+  content: "";
+  width: 60px;
+  border-radius: 50%;
+  height: 5px;
+  background: #039be4;
+  box-shadow: inset 0 0 10px 0 #000;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 0;
+  z-index: 2;
+}
+.bowl .inner {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%, rgba(0, 0, 0, 0.65) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 76%, rgba(0, 0, 0, 0.65) 100%);
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.bowl .inner:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  right: 40%;
+  top: 60%;
+  z-index: 2;
+}
+.bowl .inner:after {
+  content: "";
+  width: 20px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  right: 30%;
+  top: 15%;
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+.bowl .fill {
+  -webkit-animation-name: fillAction;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+}
+.bowl .waveShape {
+  -webkit-animation-name: waveAction;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 0.5s;
+  width: 300px;
+  height: 150px;
+  fill: #039be4;
+}
+@-webkit-keyframes fillAction {
+  0% {
+    -webkit-transform: translate(0, 150px);
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+  }
+}
+@-webkit-keyframes waveAction {
+  0% {
+    -webkit-transform: translate(-150px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+
+@-webkit-keyframes fillAction {
+  0% {
+    -webkit-transform: translate(0, 150px);
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+  }
+}
+
+@-webkit-keyframes waveAction {
+  0% {
+    -webkit-transform: translate(-150px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+
     @media all AND (min-width: 400px) {
         .jumbotron .container {
             width:75vw;
@@ -78,7 +205,7 @@
 
     @media all AND (min-width: 900px) {
         .jumbotron {
-            background: url(img/danurwendho-adyakusuma-20997-unsplash_lg.jpg);
+            background: url(img/danurwendho-adyakusuma-20997-unsplash_bg.jpg);
             background-size: cover;
         }
 
@@ -121,7 +248,29 @@
     
       <main>
         <div class="jumbotron">
-            <input type="submit" id="donate" name="donate" class="btn btn-success btn-lg">
+            <div class="container mx-auto">
+                <h1>Thank you for being a part of <span class="text-success font-weight-bold">teaping</span>!</h1>
+                <p class="text-center">Please fill in the amount you want to donate.</p>
+                <form class="form-group">
+                    <form action="/action_page.php" method="post">
+                        Amount:
+                        <input type="number" name="points" min="1" max="100" class="text-center">
+                      </form>
+                </form>
+                <input type="submit" id="donate" name="donate" value="Donate" class="btn btn-success btn-lg">
+                <div id="success" class="pt-4"></div>
+                <div class="bowl mx-auto">
+                        <div class="inner">
+                          <div class="fill">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                              <path class="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
+                          c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
+                          c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+            </div>
         </div>
     
                
@@ -141,6 +290,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+
+    $("#donate").click(function() {
+        $("#success").html("<div class='alert alert-success pt-2' role='alert'>Your donation was successful!</div>");
+    })
     
     var settings = {
   "async": true,
