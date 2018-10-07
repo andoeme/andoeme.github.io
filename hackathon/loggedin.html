@@ -77,6 +77,19 @@
                 width: 45vw;
             }
         }
+
+        .row {
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -113,8 +126,8 @@
                 <div class="col-md-4">
                     <form onsubmit="tipToPot(this.payment.value); return false;" action="#">
                         <div class="form-group">
-                            <h5>
-                                 <label for="payment">Quantity to transfer:</label></h1>
+                            <h6>
+                                 <label for="payment">Quantity to transfer</label></h1>
                                  <input type="payment" class="form-control" id="payment" name="payment" placeholder="Enter a quantity">
                                  <small id="emailHelp" class="form-text text-muted">Track your payment here.</small>
                               </div>
@@ -122,8 +135,9 @@
                         </div>
 
                         <div class="col-md-4">
-                           <h5>Pot amount</h1>
+                           <h6>Pot amount</h1>
                         <div id="pot"></div>
+                        <div id="potHash"></div>
                         <button 
                             type="button" 
                             class="btn btn-primary"
@@ -132,17 +146,24 @@
                         </div>
 
                         <div class="col-md-4">
-                           <h5>Farmers</h1>
+                           <h6>Farmers</h1>
                            <div id="farmers1"></div>
                            <div id="quantity1"></div>
+                           <div id="hash1"></div>
+                           <p>_________________________________________</p>
                            <div id="farmers2"></div>
                            <div id="quantity2"></div>
+                           <div id="hash2"><</div>
+                           <p>_________________________________________</p>
                            <div id="farmers3"></div>
                            <div id="quantity3"></div>
+                           <p>_________________________________________</p>
                            <div id="farmers4"></div>
                            <div id="quantity4"></div>
+                           <p>_________________________________________</p>
                            <div id="farmers5"></div>
                            <div id="quantity5"></div>
+                           <p>_________________________________________</p>
                            <div id="farmers6"></div>
                            <div id="quantity6"></div>
                         </div>
@@ -160,11 +181,11 @@
             const settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": "http://teaping.herokuapp.com/api/pot/5bb9b22986f4cc005dea402a",
+                "url": "http://teaping.herokuapp.com/api/pot/5bb9b8d21936b2008229c2af",
                 "method": "PUT",
                 "headers": {
-                "Content-Type": "application/json",
-                "Cache-Control": "no-cache"
+                    "Content-Type": "application/json",
+                    "Cache-Control": "no-cache"
                 },
                 "processData": false,
                 "data": `{\n    \"quantity\": ${amount}\n}`
@@ -180,7 +201,7 @@
         const request = {
         "async": true,
         "crossDomain": true,
-        "url": "http://teaping.herokuapp.com/api/pot/5bb9b22986f4cc005dea402a/distribute",
+        "url": "http://teaping.herokuapp.com/api/pot/5bb9b8d21936b2008229c2af/distribute",
         "method": "PUT",
         "headers": {
             "Content-Type": "application/json",
@@ -237,6 +258,7 @@
 
     $.ajax(settings).done(function (pot) {
         $("#pot").html(pot[0]["quantity"] + " Ξ");
+        $("#potHash").html("# address: " + pot[0]["hash"]);
     });
  }
 
@@ -255,11 +277,13 @@
 
     $.ajax(request)
         .done(function (farmers) {
-            $("#farmers1").html(farmers[0]["name"]);
-            $("#quantity1").html(farmers[0]["quantity"]);
+            $("#farmers1").html("name: " + farmers[0]["name"]);
+            $("#quantity1").html("Amount: Ξ " + farmers[0]["quantity"]);
+            $("#hash1").html("# Address: " + farmers[0]["hash"]);
 
             $("#farmers2").html(farmers[1]["name"]);
-            $("#quantity2").html(farmers[1]["quantity"]);
+            $("#quantity2").html("Amount: Ξ " + farmers[1]["quantity"]);
+            $("#hash2").html("# Address: " + farmers[1]["hash"]);
 
             $("#farmers3").html(farmers[2]["name"]);
             $("#quantity3").html(farmers[2]["quantity"]);
