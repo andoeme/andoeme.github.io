@@ -1,193 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>teaping - Donate Money As You Go</title>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+      <![endif]-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/regular.css" integrity="sha384-ZlNfXjxAqKFWCwMwQFGhmMh3i89dWDnaFU2/VZg9CvsMGA7hXHQsPIqS+JIAmgEq" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<style type="text/css">
-
-    .jumbotron {
-        background: url("img/danurwendho-adyakusuma-20997-unsplash.jpg");
-        margin: 0 auto;
-        background-size: cover;
-        text-align: center;
-        border-radius: 0;
-    }
-
-    .jumbotron .container {
-        background: rgba(255,255,255,1);
-        padding: 5vh;
-        width: 90vw;
-        margin: 0 0 0 0;
-        border-radius: 5px;
-    }
-
-    .jumbotron h1 {
-        font-size: 250%;
-        font-weight: 500;
-        padding-bottom: 5vh;
-    }
-
-    .jumbotron p {
-        text-align: left;
-    }
-
-    .header input {
-        width: 10vw;
-        float: right;
-    }
-
-    section .container {
-        margin: 20vh 0 20vh 0;
-    }
-
-    @media all AND (min-width: 400px) {
-        .jumbotron .container {
-            width:75vw;
-        }
-    }
-
-    @media all AND (min-width: 550px) {
-        .jumbotron .container {
-            width:65vw;
-        }
-    }
-
-    @media all AND (min-width: 900px) {
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <style type="text/css">
         .jumbotron {
-            background: url(img/danurwendho-adyakusuma-20997-unsplash_lg.jpg);
+            background: url("img/danurwendho-adyakusuma-20997-unsplash.jpg");
+            margin: 0 auto;
             background-size: cover;
+            text-align: center;
+            border-radius: 0;
+        }
+        
+        .jumbotron .container {
+            background: rgba(255, 255, 255, 1);
+            padding: 5vh;
+            width: 90vw;
+            margin: 0 0 0 0;
+            border-radius: 5px;
+        }
+        
+        .jumbotron h1 {
+            font-size: 250%;
+            font-weight: 500;
+            padding-bottom: 5vh;
+        }
+        
+        .jumbotron p {
+            text-align: left;
+        }
+        
+        .header input {
+            width: 10vw;
+            float: right;
+        }
+        
+        section .container {
+            margin: 20vh 0 20vh 0;
+        }
+        
+        @media all AND (min-width: 400px) {
+            .jumbotron .container {
+                width: 75vw;
+            }
+        }
+        
+        @media all AND (min-width: 550px) {
+            .jumbotron .container {
+                width: 65vw;
+            }
+        }
+        
+        @media all AND (min-width: 900px) {
+            .jumbotron {
+                background: url(img/danurwendho-adyakusuma-20997-unsplash_lg.jpg);
+                background-size: cover;
+            }
+            .jumbotron .container {
+                width: 45vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand font-weight-bold text-success" href="#"><img src="img/logo_new_cord.png" width="30" height="30" class="d-inline-block align-top" alt=""> teaping
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <a class="pr-4 text-success">
+                    <i class="fas fa-cog"></i>Account Settings</a>
+                <a class="pr-4 text-success" href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>Sign Out</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class=container>
+            <div class="row">
+                <div class="col-md-4">
+                    <form onsubmit="tipToPot(this.payment.value); return false;" action="#">
+                        <div class="form-group">
+                            <h5>
+                                 <label for="payment">Quantity to transfer:</label></h1>
+                                 <input type="payment" class="form-control" id="payment" name="payment" placeholder="Enter a quantity">
+                                 <small id="emailHelp" class="form-text text-muted">Track your payment here.</small>
+                              </div>
+                           </form>
+                        </div>
+
+                        <div class="col-md-4">
+                           <h5>Pot amount</h1>
+                        <div id="pot"></div>
+                        <button 
+                            type="button" 
+                            class="btn btn-primary"
+                            onclick="release(this)"
+                        > Release </button>
+                        </div>
+
+                        <div class="col-md-4">
+                           <h5>Farmers</h1>
+                           <div id="farmers1"></div>
+                           <div id="quantity1"></div>
+                           <div id="farmers2"></div>
+                           <div id="quantity2"></div>
+                           <div id="farmers3"></div>
+                           <div id="quantity3"></div>
+                           <div id="farmers4"></div>
+                           <div id="quantity4"></div>
+                           <div id="farmers5"></div>
+                           <div id="quantity5"></div>
+                           <div id="farmers6"></div>
+                           <div id="quantity6"></div>
+                        </div>
+                     </div>
+                  </main>
+          </div>
+      <footer>
+      </footer>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+
+        const tipToPot = (amount) => {
+            const settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "http://teaping.herokuapp.com/api/pot/5bb9b22986f4cc005dea402a",
+                "method": "PUT",
+                "headers": {
+                "Content-Type": "application/json",
+                "Cache-Control": "no-cache"
+                },
+                "processData": false,
+                "data": `{\n    \"quantity\": ${amount}\n}`
+            }
+
+            $.ajax(settings)
+            .done(function (response) {
+                getPotAmount();
+            });
         }
 
-        .jumbotron .container {
-            width: 45vw;
+    const release = () => {
+        const request = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://teaping.herokuapp.com/api/pot/5bb9b22986f4cc005dea402a/distribute",
+        "method": "PUT",
+        "headers": {
+            "Content-Type": "application/json",
+            "Cache-Control": "no-cache",
+            'Access-Control-Allow-Origin': true
+        }
+        } 
+
+        $.ajax(request)
+        .done(function (pot) {
+            if (pot[0]["quantity"] > 0) {
+                $("#pot").html(pot[0]["quantity"] + " Ξ");
+            }
+            getFarmers();
+            refreshAccounts();
+        });
+    }
+
+ const refreshAccounts = () => {
+    const request = {
+     "async": true,
+      "crossDomain": true,
+      "url": "http://teaping.herokuapp.com/api/workers",
+      "method": "GET",
+      "headers": {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-cache",
+          'Access-Control-Allow-Origin': true
+      }
+    } 
+
+    $.ajax(request)
+      .done(function (farmers) {
+          $("#quantity1").html(farmers[0]["quantity"]);
+          $("#quantity2").html(farmers[1]["quantity"]);
+          $("#quantity3").html(farmers[2]["quantity"]);
+          $("#quantity4").html(farmers[3]["quantity"]);
+          $("#farmers5").html(farmers[4]["quantity"]);
+          $("#farmers6").html(farmers[5]["quantity"]);
+      });
+ }
+
+ const getPotAmount = () => {
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://teaping.herokuapp.com/api/pot/",
+        "method": "GET",
+        "headers": {
+            "Content-Type": "application/json",
+            "Cache-Control": "no-cache"
         }
     }
 
-</style>
+    $.ajax(settings).done(function (pot) {
+        $("#pot").html(pot[0]["quantity"] + " Ξ");
+    });
+ }
 
-  </head>
-  <body>
-      <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <a class="navbar-brand font-weight-bold text-success" href="#"><img src="img/logo_new_cord.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                        teaping</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">About</a>
-                        </li>                        
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
-                        </li>
-                      </ul>
-                      <a class="pr-4 text-success">
-                            <i class="fas fa-cog"></i>Account Settings</a>
-                        <a class="pr-4 text-success" href="index.html"> 
-                            <i class="fas fa-sign-out-alt"></i>Sign Out</a>
-                    </div>
-                  </nav>
-      </header>
-    
-      <main>
+ const getFarmers = () => {
+    const request = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://teaping.herokuapp.com/api/workers",
+        "method": "GET",
+        "headers": {
+            "Content-Type": "application/json",
+            "Cache-Control": "no-cache",
+            'Access-Control-Allow-Origin': true
+        }
+    }
 
-        <section>
+    $.ajax(request)
+        .done(function (farmers) {
+            $("#farmers1").html(farmers[0]["name"]);
+            $("#quantity1").html(farmers[0]["quantity"]);
 
-        <div class="jumbotron">
-                <div class="container">
-                    <h1 class="display-4">Do Good As You Go</h1>
-                    <p class="lead">A coffee to go, the theater ticket... all adds up to you being good on the go.
-                    <span class="text-success font-weight-bold">teaping</span> transfers a tiny part of your pay to help those who need it.</p>
-                    <br>
-                    <form class="form-group">
-                        <input type="submit" class="btn btn-success" href="#" role="button" value="Learn more">
-                    </form>
-                </div>        
-        </div>
+            $("#farmers2").html(farmers[1]["name"]);
+            $("#quantity2").html(farmers[1]["quantity"]);
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1495556650867-99590cea3657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjF9&s=413cc9699e1c5cf24a3bc559e25e4004&auto=format&fit=crop&w=1950&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1532372722026-28ddb1b48daf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=553bcea2e8519ab05e6df5080c3b01c4&auto=format&fit=crop&w=1950&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div> 
-            </div>  
-            </div> 
-        </div>
+            $("#farmers3").html(farmers[2]["name"]);
+            $("#quantity3").html(farmers[2]["quantity"]);
 
-        <div class="container">
-            <h1>How Your Help Helps</h1>
-            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b73302ddf5fabf9285df2da9c462efbb&auto=format&fit=crop&w=1950&q=80" width="300px">
-        </div>
+            $("#farmers4").html(farmers[3]["name"]);
+            $("#quantity4").html(farmers[3]["quantity"]);
 
-    </section>
+            $("#farmers5").html(farmers[4]["name"]);
+            $("#quantity5").html(farmers[4]["quantity"]);
 
-        
-    </main>
+            $("#farmers6").html(farmers[5]["name"]);
+            $("#quantity6").html(farmers[5]["quantity"]);
+        });
 
-    <footer>
+        getPotAmount();
+    }
 
+    getFarmers();
 
-
-    </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-    
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    })
-        
-    </script>
-  </body>
+      </script>
+   </body>
 </html>
