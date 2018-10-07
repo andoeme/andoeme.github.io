@@ -22,7 +22,9 @@ Teaping provides transactions of micro payments from tea enthusiasts to local te
         JSON
 
 * iOS Application
+
     Swift
+
     Stripe API
 
 ## Webpage
