@@ -1,0 +1,6 @@
+module Pods_Teaping {
+  umbrella header "Pods-Teaping-umbrella.h"
+
+  export *
+  module * { export * }
+}
