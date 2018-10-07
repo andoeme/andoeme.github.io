@@ -38,14 +38,16 @@ Teaping provides transactions of micro payments from tea enthusiasts to local te
 
 https://melanieguenther.github.io/hackathon/ 
 
+![](web.png)
+
 ## iOS app
 
 ![](ios_gif.gif)
 
 ## The Team Behind Teaping 
-* [Anne Schumann](https://github.com/annesbln), 
-* [Jen](https://github.com/jennyfive), 
-* [Małgorzata Dziubich](https://github.com/mdziubich), 
-* [Masanori Uno](), 
-* [Mehrdad Mansouri](https://github.com/emsoft1), 
+* [Anne Schumann](https://github.com/annesbln)
+* [Jen](https://github.com/jennyfive)
+* [Małgorzata Dziubich](https://github.com/mdziubich) 
+* [Masanori Uno]()
+* [Mehrdad Mansouri](https://github.com/emsoft1) 
 * [Melanie Guenther](https://github.com/melanieguenther) 
