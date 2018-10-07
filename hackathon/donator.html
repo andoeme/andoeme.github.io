@@ -238,6 +238,7 @@
                           <a class="nav-link" href="#">Contact</a>
                         </li>
                       </ul>
+                      <span class="pr-4">You're logged in as a donator. </span>
                       <a class="pr-4 text-success">
                             <i class="fas fa-cog"></i>Account Settings</a>
                         <a class="pr-4 text-success" href="index.html"> 
@@ -250,26 +251,15 @@
         <div class="jumbotron">
             <div class="container mx-auto">
                 <h1>Thank you for being a part of <span class="text-success font-weight-bold">teaping</span>!</h1>
-                <p class="text-center">Please fill in the amount you want to donate.</p>
+                <p class="text-center">You donated <span id="amountDonated">10</span>€ so far! You want to help more? Please fill in the amount:</p>
                 <form class="form-group">
                     <form action="/action_page.php" method="post">
                         Amount:
-                        <input type="number" name="points" min="1" max="100" class="text-center">
+                        <input type="number" id="amount" name="points" min="1" max="100" class="text-center">
                       </form>
                 </form>
                 <input type="submit" id="donate" name="donate" value="Donate" class="btn btn-success btn-lg">
                 <div id="success" class="pt-4"></div>
-                <div class="bowl mx-auto">
-                        <div class="inner">
-                          <div class="fill">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-                              <path class="waveShape" d="M300,300V2.5c0,0-0.6-0.1-1.1-0.1c0,0-25.5-2.3-40.5-2.4c-15,0-40.6,2.4-40.6,2.4
-                          c-12.3,1.1-30.3,1.8-31.9,1.9c-2-0.1-19.7-0.8-32-1.9c0,0-25.8-2.3-40.8-2.4c-15,0-40.8,2.4-40.8,2.4c-12.3,1.1-30.4,1.8-32,1.9
-                          c-2-0.1-20-0.8-32.2-1.9c0,0-3.1-0.3-8.1-0.7V300H300z" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
             </div>
         </div>
     
@@ -291,8 +281,14 @@
 
     <script type="text/javascript">
 
+    var amount = 10;
+    $("#amountDonated").html(amount);
+
     $("#donate").click(function() {
         $("#success").html("<div class='alert alert-success pt-2' role='alert'>Your donation was successful!</div>");
+        $("#amountDonated").html(amount + parseInt($("#amount").val()));
+        console.log($('#amountDonated').val());
+        amount = amount + parseInt($("#amount").val());
     })
     
     var settings = {
