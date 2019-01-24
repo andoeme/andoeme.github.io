@@ -20,6 +20,8 @@ I'm busy finishing my Master Dutch Studies at the moment and work part time at a
 
 * Becoming a Parcour traceur
 
+* Mastering improvisation on the piano
+
 
 ## Currently Learning
 
