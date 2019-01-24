@@ -2,11 +2,11 @@
 
 ## Who I am
 
-Hi I'm a web and software developer from Berlin. Im a passionate learner, language lover,musician and novelist. In my free time I do exercise to become a traceur.
+Hi I'm a web and software developer from Berlin. Im a passionate learner, language lover, musician and novelist. In my free time I do exercise to become a traceur and always learn something new!
 
 ## What I do
 
-I currently finish my Master Dutch Studies and work part time at a Corporate Security enterprise. My current work ranges from SEO in Wordpress to Backend development.
+I'm busy finishing my Master Dutch Studies at the moment and work part time at a Corporate Security enterprise. My work ranges from SEO in Wordpress to Backend development.
 
 ## My Goals for 2019
 
@@ -16,9 +16,9 @@ I currently finish my Master Dutch Studies and work part time at a Corporate Sec
 
 * Finishing my Master Studies
 
-* Writing my novel (historical novel)
+* Writing my historical novel 
 
-* Becoming a traceur (Parcour)
+* Becoming a Parcour traceur
 
 
 ## Currently Learning
