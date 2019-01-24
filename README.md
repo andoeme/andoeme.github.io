@@ -1,16 +1,34 @@
-# Teaping service 
+# Portfolio of Melanie Günther
 
-## Problem 
+## Who I am
 
-Amrita is a woman living close to the Darjeeling hills. She is working in a tea plantation earning almost 2 $ a day for this back breaking job. She lives in a slum under unhygienic conditions and has no healthcare or education. We pay a lot of money for the amazing tea that we drink even if the actual person picking it gets almost nothing.
+Hi I'm a web and software developer from Berlin. Im a passionate learner, language lover,musician and novelist. In my free time I do exercise to become a traceur.
 
-## Solution
+## What I do
 
-Teaping provides transactions of micro payments from tea enthusiasts to local tea farmers. You can show your appreciation for the hard work they put into your product. Just sign up into the platform and send an amount into a blockchain wallet and our service shares this money fairly and evenly between them. With the help of the blockchain technology and the support of the local cooperative we can connect two sides of this line.
+I currently finish my Master Dutch Studies and work part time at a Corporate Security enterprise. My current work ranges from SEO in Wordpress to Backend development.
+
+## My Goals for 2019
+
+* Digging into Data Science and AI
+
+* Developing a Neuronal Network with Python
+
+* Finishing my Master Studies
+
+* Writing my novel (historical novel)
+
+* Becoming a traceur (Parcour)
+
+
+## Currently Learning
+
+I'm currently diving into ReactJS to develop a Portfolios as Single Web App.
+
 
 ## Technology stack
 
-* Web Application
+* Web Applications
 
     - Frontend:
     
@@ -18,36 +36,36 @@ Teaping provides transactions of micro payments from tea enthusiasts to local te
         
         CSS
         
-        JS
+        JavaScript
         
         Bootstrap
         
-        AJAX
+        React
+        
+        eCharts
+        
+        D3
+        
+        ChartJS
         
     - Backend:
     
+        Node.Js
+    
         JSON
+        
+        SQL
+        
+        Databases
 
-* iOS Application
+* Software Applications
 
-    Swift
+    C#
 
-    Stripe API
+    SQL
 
-## Webpage
 
-https://melanieguenther.github.io/hackathon/ 
 
-![](web.png)
 
-## iOS app
 
-![](ios_gif.gif)
 
-## The Team Behind Teaping 
-* [Anne Schumann](https://github.com/annesbln)
-* [Jen](https://github.com/jennyfive)
-* [Małgorzata Dziubich](https://github.com/mdziubich) 
-* [Masanori Uno]()
-* [Mehrdad Mansouri](https://github.com/emsoft1) 
-* [Melanie Guenther](https://github.com/melanieguenther) 
