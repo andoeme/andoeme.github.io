@@ -27,7 +27,7 @@ I'm busy finishing my Master Dutch Studies at the moment and work part time at a
 
 I'm working on a **Data Science Mini-Degree using Python, NumPy and Pandas**. So far I learnt about matrices, how to calculate and manipulate them and web scraping to collect data and save them sanitized into files.
 
-[Data Science Repo Files](https://melanieguenther.github.io/datascience/)
+[Head over to my Data Science Repository!](https://melanieguenther.github.io/datascience/)
 
 
 ## Hackathons I participated in
