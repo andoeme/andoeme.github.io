@@ -43,7 +43,7 @@ Cycurity makes leaving your bike locked somewhere easier as it navigates you to 
 
 ## Technology stack
 
-* Web Applications
+* **Web Applications**
 
     - Frontend:
     
@@ -71,7 +71,7 @@ Cycurity makes leaving your bike locked somewhere easier as it navigates you to 
         
         Databases
 
-* Software Applications
+* **Software Applications**
 
     C#
 
