@@ -2,7 +2,7 @@
 
 ## Who I am
 
-Hi I'm a **web and software developer** from Berlin. Im a **passionate learner, language lover, musician and novelist**. In my free time I do exercise to become a traceur and always learn something new!
+Hi I'm a **web and software developer** from Berlin. As well I'm a **passionate learner, language lover, musician and novelist**. In my free time I exercise to become a traceur and always learn something new!
 
 ## What I do
 
