@@ -10,17 +10,17 @@ I'm busy finishing my Master Dutch Studies at the moment and work part time at a
 
 ## My Goals for 2019
 
--[ ] Digging into **Data Science and AI**
+- [ ] Digging into **Data Science and AI**
 
--[ ] Developing a **Neuronal Network with Python**
+- [ ] Developing a **Neuronal Network with Python**
 
--[ ] Finishing my **Master Studies**
+- [ ] Finishing my **Master Studies**
 
--[ ] Writing my historical **novel** 
+- [ ] Writing my historical **novel** 
 
--[ ] Becoming a **Parcour** traceur
+- [ ] Becoming a **Parcour** traceur
 
--[ ] Mastering improvisation on the **piano**
+- [ ] Mastering improvisation on the **piano**
 
 
 ## Currently Learning
