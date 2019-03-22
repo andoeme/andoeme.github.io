@@ -23,7 +23,7 @@ I'm busy finishing my Master Dutch Studies at the moment and work part time at a
 - [ ] Mastering improvisation on the **piano**
 
 
-## Currently Learning
+## What I'm currently Learning
 
 I'm working on a **Data Science Mini-Degree using Python, NumPy and Pandas**. So far I learnt about matrices, how to calculate and manipulate them and web scraping to collect data and save them sanitized into files.
 
