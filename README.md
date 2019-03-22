@@ -35,8 +35,10 @@ I'm working on a **Data Science Mini-Degree using Python, NumPy and Pandas**. So
 I participated in two hackathons. From these developed two teams and projects. These are teaping and Cycurity.
 
 [teaping](https://melanieguenther.github.io/teaping/)
+**Do good as you go!** teaping is a NGO wanting to help tea pickers. Buy a tea and donate some money of the buying price to the people who made your tea possible!
 
-[Cycurity](https://github.com/melanieguenther/cycurity)
+[Cycurity](https://github.com/melanieguenther/cycurity) 
+Cycurity makes leaving your bike locked somewhere easier as it navigates you to save bikestands in the neighbourhood. Additionally it helps you to buy the safest lock depending on where you live.
 
 
 ## Technology stack
