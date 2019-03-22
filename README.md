@@ -1,4 +1,4 @@
-# Portfolio of Melanie Günther
+# Portfolio of Melanie
 
 ## Who I am
 
@@ -27,17 +27,17 @@ I'm busy finishing my Master Dutch Studies at the moment and work part time at a
 
 I'm working on a **Data Science Mini-Degree using Python, NumPy and Pandas**. So far I learnt about matrices, how to calculate and manipulate them and web scraping to collect data and save them sanitized into files.
 
-[Head over to my Data Science Repository!](https://melanieguenther.github.io/datascience/)
+[Head over to my Data Science Repository!](https://andoeme.github.io/datascience/)
 
 
 ## Hackathons I participated in
 
 I participated in two hackathons. From these developed two teams and projects. These are teaping and Cycurity.
 
-[teaping](https://melanieguenther.github.io/teaping/)
+[teaping](https://andoeme.github.io/teaping/)
 **Do good as you go!** teaping is a NGO wanting to help tea pickers. Buy a tea and donate some money of the buying price to the people who made your tea possible!
 
-[Cycurity](https://github.com/melanieguenther/cycurity) 
+[Cycurity](https://github.com/andoeme/cycurity) 
 Cycurity makes leaving your bike locked somewhere easier as it navigates you to save bikestands in the neighbourhood. Additionally it helps you to buy the safest lock depending on where you live.
 
 
