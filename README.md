@@ -53,8 +53,6 @@ I participated in two hackathons. From these developed two teams and projects. T
         
         Bootstrap
         
-        React
-        
         eCharts
         
         D3
