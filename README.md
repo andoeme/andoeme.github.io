@@ -6,7 +6,7 @@ Hi I'm a **web and software developer** from Berlin. As well I'm a **passionate 
 
 ## What I do
 
-I'm busy finishing my Master Dutch Studies at the moment and work part time at a Corporate Security enterprise. My work ranges from SEO in Wordpress to Backend development.
+I'm busy finishing my **Master Dutch Studies** at the moment and work part time at a **Corporate Security company**. My work ranges from SEO and Design to Web and Software Development.
 
 ## My Goals for 2019
 
@@ -47,29 +47,29 @@ Cycurity makes leaving your bike locked somewhere easier as it navigates you to 
 
     - Frontend:
     
-        HTML
+        - HTML
         
-        CSS
+        - CSS
         
-        JavaScript
+        - JavaScript
         
-        Bootstrap
+        - Bootstrap
         
-        eCharts
+        - eCharts
         
-        D3
+        - D3
         
-        ChartJS
+        - ChartJS
         
     - Backend:
     
-        Node.Js
+        - Node.Js
     
-        JSON
+        - JSON
         
-        SQL
+        - SQL
         
-        Databases
+        - Databases
 
 * **Software Applications**
 
