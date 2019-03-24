@@ -24,7 +24,7 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 ## What I'm Bilding at the Moment
 
-A Language Learning App that uses visual gamification to help a language learner become the best learner he/she/they can be!
+A **Language Learning App** that uses visual gamification to help a language learner become the best learner he/she/they can be!
 
 ## What I'm Currently Learning
 
