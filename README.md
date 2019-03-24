@@ -16,12 +16,15 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 - [ ] Finishing my **Master Studies**
 
-- [ ] Writing my historical **novel** 
+- [ ] Starting to write my historical **novel** 
 
 - [ ] Becoming a **Parcour** traceur
 
 - [ ] Mastering improvisation on the **piano**
 
+## What I'm Bilding at the Moment
+
+A Language Learning App that uses visual gamification to help a language learner become the best learner he/she/they can be!
 
 ## What I'm Currently Learning
 
