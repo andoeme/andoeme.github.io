@@ -10,19 +10,21 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 ## My Goals for 2019
 
-- [ ] Digging into **Data Science and AI**
+- [x] Digging into **Data Science**
+
+- [ ] And **AI**
 
 - [ ] Developing a **Neuronal Network with Python**
 
 - [ ] Finishing my **Master Studies**
 
-- [ ] Starting to write my historical **novel** 
+- [x] Starting to write my historical **novel** 
 
 - [ ] Becoming a **Parcour** traceur
 
 - [ ] Mastering improvisation on the **piano**
 
-## What I'm Bilding at the Moment
+## What I'm Building at the Moment
 
 A **Language Learning App** that uses visual gamification to help a language learner become the best learner he/she/they can be!
 
@@ -38,7 +40,7 @@ I'm working on a **Data Science Mini-Degree using Python, NumPy and Pandas**. So
 I participated in two hackathons. From these developed two teams and projects. These are teaping and Cycurity.
 
 [teaping](https://andoeme.github.io/teaping/)
-**Do good as you go!** teaping is a NGO wanting to help tea pickers. Buy a tea and donate some money of the buying price to the people who made your tea possible!
+Do good as you go! teaping is a NGO wanting to help tea pickers. Buy a tea and donate some money of the buying price to the people who made your tea possible!
 
 [Cycurity](https://github.com/andoeme/cycurity) 
 Cycurity makes leaving your bike locked somewhere easier as it navigates you to save bikestands in the neighbourhood. Additionally it helps you to buy the safest lock depending on where you live.
