@@ -4,6 +4,8 @@
 
 Hi I'm a **web and software developer** from Berlin. As well I'm a **passionate learner, language lover, musician and novelist**. In my free time I exercise to become a traceur and always learn something new!
 
+![Photograph of Melanie](https://avatars2.githubusercontent.com/u/42304542?s=460&v=4)
+
 ## What I do
 
 I'm busy finishing my **Master Dutch Studies** at the moment and work part time at a **Corporate Security company**. My work ranges from SEO and Design to Web and Software Development.
