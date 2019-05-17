@@ -20,6 +20,10 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 - [ ] Finishing my **Master Studies**
 
+- [x] Finishing my first gaming app
+
+- [x] Developing an app
+
 - [x] Starting to write my historical **novel** 
 
 - [ ] Becoming a **Parcour** traceur
@@ -28,7 +32,8 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 ## What I'm Building at the Moment
 
-A **Language Learning App** that uses visual gamification to help a language learner become the best learner he/she/they can be!
+1. Different [games](https://andoeme.github.io/games/) like RPG and Crossy games
+1. A **Language Learning App** that uses visual gamification to help a language learner become the best learner he/she/they can be!
 
 ## What I'm Currently Learning
 
