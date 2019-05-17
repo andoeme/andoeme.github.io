@@ -32,7 +32,7 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 ## What I'm Building at the Moment
 
-1. Different [games](https://andoeme.github.io/games/) like RPG and Crossy games
+1. Different [games](https://andoeme.github.io/gamedevelopment/) like RPG and Crossy games
 1. A **Language Learning App** that uses visual gamification to help a language learner become the best learner he/she/they can be!
 
 ## What I'm Currently Learning
