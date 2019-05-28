@@ -95,11 +95,11 @@ Cycurity makes leaving your bike locked somewhere easier as it navigates you to 
    
 * **Game Development**
 
-- Python & Pygame
+    - Python & Pygame
 
-- JavaScript & Phaser 3
+    - JavaScript & Phaser 3
 
-- HTML5 & Vue.js
+    - HTML5 & Vue.js
 
 
 
