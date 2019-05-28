@@ -2,7 +2,7 @@
 
 ## Who I am
 
-Hi I'm a **web and software developer** from Berlin. As well I'm a **passionate learner, language lover, musician and novelist**. In my free time I exercise to become a traceur and always learn something new!
+Hi I'm a **web, software and game developer** from Berlin. As well I'm a **passionate learner, language lover, musician and novelist**. In my free time I exercise to become a traceur and always learn something new!
 
 ![Photograph of Melanie](https://avatars2.githubusercontent.com/u/42304542?s=460&v=4)
 
@@ -92,6 +92,14 @@ Cycurity makes leaving your bike locked somewhere easier as it navigates you to 
    - SQL
     
    - Python
+   
+* **Game Development**
+
+- Python & Pygame
+
+- JavaScript & Phaser 3
+
+- HTML5 & Vue.js
 
 
 
