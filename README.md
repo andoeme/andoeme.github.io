@@ -12,7 +12,7 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 ## My Goals for 2019
 
-- [x] Digging into **Data Science**
+- [x] Digging into [Data Science](https://andoeme.github.io/datascience/)
 
 - [ ] And **AI**
 
@@ -20,7 +20,7 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 - [ ] Finishing my **Master Studies**
 
-- [x] Finishing my first gaming app
+- [x] Finishing my first [gaming app](https://andoeme.github.io/gamedevelopment/)
 
 - [x] Developing an app
 
@@ -37,9 +37,9 @@ I'm busy finishing my **Master Dutch Studies** at the moment and work part time 
 
 ## What I'm Currently Learning
 
-I'm working on a **Data Science Mini-Degree using Python, NumPy and Pandas**. So far I learnt about matrices, how to calculate and manipulate them and web scraping to collect data and save them sanitized into files.
+I'm working on a [Data Science Mini-Degree using Python, NumPy and Pandas](https://andoeme.github.io/datascience/). So far I learnt about matrices, how to calculate and manipulate them and web scraping to collect data and save them sanitized into files.
 
-[Head over to my Data Science Repository!](https://andoeme.github.io/datascience/)
+Additionally I'm into the **Vue.js Framework** for work. I already coded an [RPG game](https://andoeme.github.io/gamedevelopment/monster_game.html) and a [Quote's Database](https://andoeme.github.io/quotes-database/).
 
 
 ## Hackathons I Participated in
@@ -59,11 +59,13 @@ Cycurity makes leaving your bike locked somewhere easier as it navigates you to 
 
     - Frontend:
     
-        - HTML
+        - HTML5
         
-        - CSS
+        - CSS3
         
         - JavaScript
+        
+        - Vue.js
         
         - Bootstrap
         
@@ -85,11 +87,11 @@ Cycurity makes leaving your bike locked somewhere easier as it navigates you to 
 
 * **Software Applications**
 
-    C#
+   - C#
 
-    SQL
+   - SQL
     
-    Python
+   - Python
 
 
 
